@@ -256,10 +256,10 @@ svg {
     margin: 0 auto;
 }
 .venue_title {
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 }
 .venue_content {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 /* Patrons section */
 
