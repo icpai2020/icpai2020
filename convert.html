@@ -56,7 +56,7 @@
                         <div class="form-group row">
                             <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">連絡電話</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control form-control-sm" id="studentPhone">
+                                <input type="text" class="form-control form-control-sm" id="studentPhone" required>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -86,16 +86,117 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">考試日期時間</label>
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">考試日期</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control form-control-sm" id="studentDate"
-                                    placeholder="格式範例: 2020-01-01">
+                                <input type="date" class="form-control form-control-sm" id="studentDate">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">考試時間</label>
+                            <div class="col-sm-10">
+                                <input type="time" class="form-control form-control-sm" id="studentTime">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">考試地點</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control form-control-sm" id="studentPlace">
+                            </div>
+                        </div>
+                        <div class="form-group row mt-5">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">口試委員
+                                (1)</label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control form-control-sm" id="Committee1Name"
+                                    placeholder="姓名">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" id="Committee1Edu"
+                                    placeholder="最高學歷">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" id="Committee1Service"
+                                    placeholder="服務單位">
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control form-control-sm" id="Committee1Job"
+                                    placeholder="職稱">
+                            </div>
+                            <div class="col-sm-8 mt-3 mx-auto">
+                                <textarea class="form-control form-control-sm" id="Committee1Skill"
+                                    placeholder="專長"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">口試委員
+                                (2)</label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control form-control-sm" id="Committee2Name"
+                                    placeholder="姓名">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" id="Committee2Edu"
+                                    placeholder="最高學歷">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" id="Committee2Service"
+                                    placeholder="服務單位">
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control form-control-sm" id="Committee2Job"
+                                    placeholder="職稱">
+                            </div>
+                            <div class="col-sm-8 mt-3 mx-auto">
+                                <textarea class="form-control form-control-sm" id="Committee2Skill"
+                                    placeholder="專長"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">口試委員
+                                (3)</label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control form-control-sm" id="Committee3Name"
+                                    placeholder="姓名">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" id="Committee3Edu"
+                                    placeholder="最高學歷">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" id="Committee3Service"
+                                    placeholder="服務單位">
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control form-control-sm" id="Committee3Job"
+                                    placeholder="職稱">
+                            </div>
+                            <div class="col-sm-8 mt-3 mx-auto">
+                                <textarea class="form-control form-control-sm" id="Committee3Skill"
+                                    placeholder="專長"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">口試委員
+                                (4)</label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control form-control-sm" id="Committee4Name"
+                                    placeholder="姓名">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" id="Committee4Edu"
+                                    placeholder="最高學歷">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" id="Committee4Service"
+                                    placeholder="服務單位">
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control form-control-sm" id="Committee4Job"
+                                    placeholder="職稱">
+                            </div>
+                            <div class="col-sm-8 mt-3 mx-auto">
+                                <textarea class="form-control form-control-sm" id="Committee4Skill"
+                                    placeholder="專長"></textarea>
                             </div>
                         </div>
                     </form>
@@ -111,12 +212,12 @@
         <div class="container">
             <h2 class="text-center mx-auto my-5">資料表確認</h2>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 mx-auto">
                     <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th scope="col">系所</th>
-                                <th class="InnerStudentDepart" scope="col">未填寫</th>
+                                <td class="InnerStudentDepart" scope="col">未填寫</td>
                             </tr>
                         </thead>
                         <tbody>
@@ -149,8 +250,12 @@
                                 <td class="InnerStudentTeacher">未填寫</td>
                             </tr>
                             <tr>
-                                <th scope="row">考試日期時間</th>
+                                <th scope="row">考試日期</th>
                                 <td class="InnerStudentDate">未填寫</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">考試時間</th>
+                                <td class="InnerStudentTime">未填寫</td>
                             </tr>
                             <tr>
                                 <th scope="row">考試地點</th>
@@ -158,30 +263,97 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="col-md-auto text-center">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p>確認無誤後，按下Print產生文件。</br><span class="text-danger">注意:需關閉瀏覽器的自動彈跳視窗封鎖</span></p>
 
-                                <button id="print" class="btn btn-primary mb-2"
-                                    onclick="printScreen(Application);printScreen2(Committee);printScreen3(Score);;printScreen4(TitlePage);printScreen5(Check)">Print</button>
-                            </div>
-                            <div class="col-md-6">
-                                </br>
-                                <p> 更改資料，按下Edit。</p>
-                                <button id="edit" class="btn btn-info mb-2">
-                                    Edit
-                                </button>
-                            </div>
-                        </div>
 
+                    <table class="table table-striped">
+                        <thead>
+                            <tr class="table-active">
+                                <th scope="col" style="width:5%">#</th>
+                                <th scope="col" style="width:15%">口委姓名</th>
+                                <th scope="col" style="width:15%">最高學歷</th>
+                                <th scope="col" style="width:15%">服務單位</th>
+                                <th scope="col" style="width:10%">職稱</th>
+                                <th scope="col" style="width:40%">專長</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td><span class="InnerCommittee1Name" style="word-break: break-all;width:100%"> </span>
+                                </td>
+                                <td><span class="InnerCommittee1Edu" style="word-break: break-all;width:100%"> </span>
+                                </td>
+                                <td><span class="InnerCommittee1Service" style="word-break: break-all;width:100%">
+                                    </span></td>
+                                <td><span class="InnerCommittee1Job" style="word-break: break-all;width:100%"> </span>
+                                </td>
+                                <td><span class="InnerCommittee1Skill" style="word-break: break-all;width:100%"> </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td><span class="InnerCommittee2Name" style="word-break: break-all;width:100%"> </span>
+                                </td>
+                                <td><span class="InnerCommittee2Edu" style="word-break: break-all;width:100%"> </span>
+                                </td>
+                                <td><span class="InnerCommittee2Service" style="word-break: break-all;width:100%">
+                                    </span></td>
+                                <td><span class="InnerCommittee2Job" style="word-break: break-all;width:100%"> </span>
+                                </td>
+                                <td><span class="InnerCommittee2Skill" style="word-break: break-all;width:100%"> </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td><span class="InnerCommittee3Name" style="word-break: break-all;width:100%"> </span>
+                                </td>
+                                <td><span class="InnerCommittee3Edu" style="word-break: break-all;width:100%"> </span>
+                                </td>
+                                <td><span class="InnerCommittee3Service" style="word-break: break-all;width:100%">
+                                    </span></td>
+                                <td><span class="InnerCommittee3Job" style="word-break: break-all;width:100%"> </span>
+                                </td>
+                                <td><span class="InnerCommittee3Skill" style="word-break: break-all;width:100%"> </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td><span class="InnerCommittee4Name" style="word-break: break-all;width:100%"> </span>
+                                </td>
+                                <td><span class="InnerCommittee4Edu" style="word-break: break-all;width:100%"> </span>
+                                </td>
+                                <td><span class="InnerCommittee4Service" style="word-break: break-all;width:100%">
+                                    </span></td>
+                                <td><span class="InnerCommittee4Job" style="word-break: break-all;width:100%"> </span>
+                                </td>
+                                <td><span class="InnerCommittee4Skill" style="word-break: break-all;width:100%"> </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-auto text-center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>確認無誤後，按下Print產生文件。</br><span class="text-danger">注意: 需關閉瀏覽器的自動彈跳視窗封鎖</span></p>
+
+                        <button id="print" class="btn btn-primary mb-2"
+                            onclick="printScreen(Application);printScreen2(Committee);printScreen3(Score);;printScreen4(TitlePage);printScreen5(Check)">Print</button>
+                    </div>
+                    <div class="col-md-6">
+                        </br>
+                        <p> 更改資料，按下Edit。</p>
+                        <button id="edit" class="btn btn-info mb-2">
+                            Edit
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="Output" class="invisible">
+    <section id="Output" class="invisible0">
         <section id="Application">
             <div class="container">
                 <div class="row">
@@ -191,86 +363,72 @@
                             <tr>
                                 <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">系所
                                 </td>
-                                <td class="border-dark InnerStudentDepart" style="border-width: 2px;width: 85%">Lorem
-                                    ipsum dolor sit amet
-                                    consectetur adipisicing</td>
+                                <td class="border-dark InnerStudentDepart" style="border-width: 2px;width: 85%"></td>
                             </tr>
                             <tr>
                                 <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">學號
                                 </td>
-                                <td class="border-dark InnerStudentID" style="border-width: 2px;width: 85%">Lorem ipsum
-                                    dolor sit amet
-                                    consectetur adipisicing</td>
+                                <td class="border-dark InnerStudentID" style="border-width: 2px;width: 85%"></td>
                             </tr>
                             <tr>
                                 <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">姓名
                                 </td>
-                                <td class="border-dark InnerStudentName" style="border-width: 2px;width: 85%">Lorem
-                                    ipsum dolor sit amet
-                                    consectetur adipisicing</td>
+                                <td class="border-dark InnerStudentName" style="border-width: 2px;width: 85%"></td>
                             </tr>
                             <tr>
                                 <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">
                                     連絡電話
                                 </td>
-                                <td class="border-dark InnerStudentPhone" style="border-width: 2px;width: 85%">Lorem
-                                    ipsum dolor sit amet
-                                    consectetur adipisicing</td>
+                                <td class="border-dark InnerStudentPhone" style="border-width: 2px;width: 85%"></td>
                             </tr>
                             <tr>
                                 <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">
                                     Email
                                 </td>
-                                <td class="border-dark InnerStudentEmail" style="border-width: 2px;width: 85%">Lorem
-                                    ipsum dolor sit amet
-                                    consectetur adipisicing</td>
+                                <td class="border-dark InnerStudentEmail" style="border-width: 2px;width: 85%"></td>
                             </tr>
                             <tr>
                                 <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">
                                     論文題目
                                 </td>
-                                <td class="border-dark InnerStudentTopicCE" style="border-width: 2px;width: 85%">Lorem
-                                    ipsum dolor sit amet
-                                    consectetur adipisicing</td>
+                                <td class="border-dark InnerStudentTopicCE" style="border-width: 2px;width: 85%"></td>
                             </tr>
                             <tr>
                                 <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">
                                     指導教授
                                 </td>
-                                <td class="border-dark InnerStudentTeacher" style="border-width: 2px;width: 85%">Lorem
-                                    ipsum dolor sit amet
-                                    consectetur adipisicing</td>
+                                <td class="border-dark InnerStudentTeacher" style="border-width: 2px;width: 85%"></td>
                             </tr>
                             <tr>
                                 <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">
-                                    考試日期時間
+                                    考試日期
                                 </td>
-                                <td class="border-dark InnerStudentDate" style="border-width: 2px;width: 85%">Lorem
-                                    ipsum dolor sit amet
-                                    consectetur adipisicing</td>
+                                <td class="border-dark InnerStudentDate" style="border-width: 2px;width: 85%"></td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">
+                                    考試時間
+                                </td>
+                                <td class="border-dark InnerStudentTime" style="border-width: 2px;width: 85%"></td>
                             </tr>
                             <tr>
                                 <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">
                                     考試地點
                                 </td>
-                                <td class="border-dark InnerStudentPlace" style="border-width: 2px;width: 85%">Lorem
-                                    ipsum dolor sit amet
-                                    consectetur adipisicing</td>
+                                <td class="border-dark InnerStudentPlace" style="border-width: 2px;width: 85%"></td>
                             </tr>
                             <tr>
-                                <td class="border-dark" colspan="2" style="border-width: 2px;">Lorem ipsum dolor sit
-                                    amet
-                                    consectetur
-                                    adipisicing
-                                    elit.
-                                    Corrupti, vel?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
-                                    sequi!
-                                    Adipisci minima impedit dolorum animi facilis. Perferendis minus molestiae,
-                                    reiciendis
-                                    voluptatem eum voluptas sit saepe quaerat exercitationem error? Adipisci, labore non
-                                    iste, maiores aliquid magnam cum sed eos aut vitae eius molestias doloribus
-                                    cupiditate
-                                    nesciunt corporis perferendis odio pariatur fuga.</td>
+                                <td class="border-dark" colspan="2" style="border-width: 2px;">
+                                    <div>說明:</div>
+                                    <div>1. 申請要件：</div>
+                                    <div class="ml-3">* 修業期滿
+                                        (碩士生申請提前畢業須符合修業規章規定：
+                                        就學期間以本所名義與指導教授共同在SCI所認定的期刊發表論文一篇以上，
+                                        且指導教授除外為第一作者) 。</div>
+                                    <div class="ml-3">* 修畢各系所規定之應修科目與學分。</div>
+                                    <div class="ml-3">* 博士學位候選人在修課學分數及論文發表篇數等都達到畢業要求，且通過資格考試及論文計畫考試。</div>
+                                    <div>2. 申請學位考試須經指導教授同意後向所屬系所辦理。</div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -284,7 +442,7 @@
                         <tbody>
                             <thead class="text-center">
                                 <tr>
-                                    <th class="border-dark" scope="row" style="border-width: 2px;width: 15%">姓名</th>
+                                    <th class="border-dark" scope="row" style="border-width: 2px;width: 10%">姓名</th>
                                     <th class="border-dark" scope="row" style="border-width: 2px;width: 20%">最高學歷</th>
                                     <th class="border-dark" scope="row" style="border-width: 2px;width: 30%">服務單位</th>
                                     <th class="border-dark" scope="row" style="border-width: 2px;width: 10%">職稱</th>
@@ -292,40 +450,52 @@
                                 </tr>
                             </thead>
                             <tr>
-                                <td class="border-dark" scope="row" style="border-width: 2px">Lorem, ipsum.</td>
-                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit amet.</td>
-                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit.</td>
-                                <td class="border-dark" style="border-width: 2px">Lorem, ipsum dolor.</td>
-                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. A aliquid eveniet soluta iusto
-                                    dolor! Est exercitationem dicta quas culpa corporis?</td>
+                                <td class="border-dark InnerCommittee1Name" scope="row"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee1Edu"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee1Service"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee1Job"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee1Skill"
+                                    style="border-width: 2px;word-break: break-all;"></td>
                             </tr>
                             <tr>
-                                <td class="border-dark" scope="row" style="border-width: 2px">Lorem, ipsum.</td>
-                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit amet.</td>
-                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit.</td>
-                                <td class="border-dark" style="border-width: 2px">Lorem, ipsum dolor.</td>
-                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. A aliquid eveniet soluta iusto
-                                    dolor! Est exercitationem dicta quas culpa corporis?</td>
+                                <td class="border-dark InnerCommittee2Name" scope="row"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee2Edu"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee2Service"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee2Job"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee2Skill"
+                                    style="border-width: 2px;word-break: break-all;"></td>
                             </tr>
                             <tr>
-                                <td class="border-dark" scope="row" style="border-width: 2px">Lorem, ipsum.</td>
-                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit amet.</td>
-                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit.</td>
-                                <td class="border-dark" style="border-width: 2px">Lorem, ipsum dolor.</td>
-                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. A aliquid eveniet soluta iusto
-                                    dolor! Est exercitationem dicta quas culpa corporis?</td>
+                                <td class="border-dark InnerCommittee3Name" scope="row"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee3Edu"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee3Service"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee3Job"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee3Skill"
+                                    style="border-width: 2px;word-break: break-all;"></td>
                             </tr>
                             <tr>
-                                <td class="border-dark" scope="row" style="border-width: 2px">Lorem, ipsum.</td>
-                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit amet.</td>
-                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit.</td>
-                                <td class="border-dark" style="border-width: 2px">Lorem, ipsum dolor.</td>
-                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. A aliquid eveniet soluta iusto
-                                    dolor! Est exercitationem dicta quas culpa corporis?</td>
+                                <td class="border-dark InnerCommittee4Name" scope="row"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee4Edu"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee4Service"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee4Job"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee4Skill"
+                                    style="border-width: 2px;word-break: break-all;"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -366,15 +536,12 @@
                                 <td scope="row" colspan="2" class="border-dark" scope="row"
                                     style="border-width: 2px;width:30%">口試學生姓名學號</td>
                                 <td class="border-dark InnerStudentName" colspan="3"
-                                    style="border-width: 2px;width:70%">Lorem ipsum dolor
-                                    sit amet.</td>
+                                    style="border-width: 2px;width:70%"></td>
 
                             </tr>
                             <tr>
                                 <td class="border-dark" colspan="2" scope="row" style="border-width: 2px">指導教授姓名
-                                <td class="border-dark InnerStudentTeacher" colspan="3" style="border-width: 2px">Lorem
-                                    ipsum dolor sit amet.
-                                </td>
+                                <td class="border-dark InnerStudentTeacher" colspan="3" style="border-width: 2px"></td>
                             </tr>
                             <tr>
                                 <td class="border-dark" colspan="4" scope="row" style="border-width: 2px;width:85%">
@@ -390,44 +557,48 @@
 
                             </tr>
                             <tr>
-                                <td class="border-dark" scope="row" style="border-width: 2px;width:15%">Lorem, ipsum.
-                                </td>
-                                <td class="border-dark" style="border-width: 2px;width:15%">Lorem, ipsum.</td>
-                                <td class="border-dark" style="border-width: 2px;width:20%">Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing.</td>
-                                <td class="border-dark" style="border-width: 2px;width:35%">Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Autem, eum.</td>
-                                <td class="border-dark" style="border-width: 2px;width:15%">Lorem ipsum </td>
+                                <td scope="row" class="border-dark InnerCommittee1Name"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee1Job"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee1Edu"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee1Service"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark" style="border-width: 2px;"></td>
                             </tr>
                             <tr>
-                                <td class="border-dark" scope="row" style="border-width: 2px;width:15%">Lorem, ipsum.
-                                </td>
-                                <td class="border-dark" style="border-width: 2px;width:15%">Lorem, ipsum.</td>
-                                <td class="border-dark" style="border-width: 2px;width:20%">Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing.</td>
-                                <td class="border-dark" style="border-width: 2px;width:35%">Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Autem, eum.</td>
-                                <td class="border-dark" style="border-width: 2px;width:15%">Lorem ipsum </td>
+                                <td scope="row" class="border-dark InnerCommittee2Name"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee1Job"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee2Edu"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee2Service"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark" style="border-width: 2px;"></td>
                             </tr>
                             <tr>
-                                <td class="border-dark" scope="row" style="border-width: 2px;width:15%">Lorem, ipsum.
-                                </td>
-                                <td class="border-dark" style="border-width: 2px;width:15%">Lorem, ipsum.</td>
-                                <td class="border-dark" style="border-width: 2px;width:20%">Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing.</td>
-                                <td class="border-dark" style="border-width: 2px;width:35%">Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Autem, eum.</td>
-                                <td class="border-dark" style="border-width: 2px;width:15%">Lorem ipsum </td>
+                                <td scope="row" class="border-dark InnerCommittee3Name"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee3Job"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee3Edu"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee3Service"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark" style="border-width: 2px;"></td>
                             </tr>
                             <tr>
-                                <td class="border-dark" scope="row" style="border-width: 2px;width:15%">Lorem, ipsum.
-                                </td>
-                                <td class="border-dark" style="border-width: 2px;width:15%">Lorem, ipsum.</td>
-                                <td class="border-dark" style="border-width: 2px;width:20%">Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing.</td>
-                                <td class="border-dark" style="border-width: 2px;width:35%">Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Autem, eum.</td>
-                                <td class="border-dark" style="border-width: 2px;width:15%">Lorem ipsum </td>
+                                <td scope="row" class="border-dark InnerCommittee4Name"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee4Job"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee4Edu"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark InnerCommittee4Service"
+                                    style="border-width: 2px;word-break: break-all;"></td>
+                                <td class="border-dark" style="border-width: 2px;"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -447,11 +618,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="mt-3 mx-auto text-center">國立交通大學 <span class="InnerStudentDepart">Lorem</span>></h3>
+                        <h3 class="mt-3 mx-auto text-center">國立交通大學 <span class="InnerStudentDepart"></span>></h3>
                         <h3 class="mt-3 mx-auto text-center">碩士班畢業論文口試評分表</h3>
                     </div>
-                    <div class="col-md-6 mt-3">研究生姓名: <span class="InnerStudentName">Lorem</span> </div>
-                    <div class="col-md-6 mt-3">學號: <span class="InnerStudentID">Lorem</span></div>
+                    <div class="col-md-6 mt-3">研究生姓名: <span class="InnerStudentName"></span> </div>
+                    <div class="col-md-6 mt-3">學號: <span class="InnerStudentID"></span></div>
 
                     <div class="col-md-2 mt-3">論文題目:</div>
                     <div class="col-10 mt-3">
@@ -502,7 +673,7 @@
                     </div>
 
                     <div class="col-md-2 mt-5">口試委員: </div>
-                    <div class="col-md-10 mt-5">
+                    <div class="col-md-10 mt-4">
                         <div class="row">
                             <div class="col-md-6 mt-5">__________________________________________</div>
                             <div class="col-md-6 mt-5">__________________________________________</div>
@@ -513,11 +684,11 @@
 
                         </div>
                     </div>
-                    <div class="col-md-3 my-5">指導教授: </div>
+                    <div class="col-md-3 my-4">指導教授: </div>
                     <div class="col-md-9 my-5">
                         _____________________________________________________________________________________________
                     </div>
-                    <div class="col-md-3 my-5">所長: </div>
+                    <div class="col-md-3 my-4">所長: </div>
                     <div class="col-md-9 my-5">
                         _____________________________________________________________________________________________
                     </div>
@@ -541,32 +712,29 @@
                         <tbody>
                             <tr>
                                 <td class="border-dark" scope="row" style="border-width: 2px;width:15%">學年度學期</td>
-                                <td class="border-dark" style="border-width: 2px;width:10%">1092</td>
+                                <td class="border-dark" style="border-width: 2px;width:15%">1092</td>
                                 <td class="border-dark" style="border-width: 2px;width:10%">系所</td>
-                                <td class="border-dark InnerStudentDepart" style="border-width: 2px;width:45%">Lorem
+                                <td class="border-dark InnerStudentDepart" style="border-width: 2px;width:45%">
                                     ipsum dolor sit amet
                                     consectetur.</td>
-                                <td class="border-dark" style="border-width: 2px;width:20%">碩士</td>
+                                <td class="border-dark" style="border-width: 2px;width:15%">碩士</td>
                             </tr>
                             <tr>
                                 <td class="border-dark" scope="row" style="border-width: 2px;">學號</td>
-                                <td class="border-dark InnerStudentID" colspan="2" style="border-width: 2px;">Lorem,
-                                    ipsum.</td>
-                                <td class="border-dark" style="border-width: 2px;">論文口試日期</td>
-                                <td class="border-dark InnerStudentDate" style="border-width: 2px;">xxxx-xx-xx</td>
+                                <td class="border-dark InnerStudentID" style="border-width: 2px;"></td>
+                                <td class="border-dark" colspan="2" style="border-width: 2px;">論文口試日期</td>
+                                <td class="border-dark InnerStudentDate" style="border-width: 2px;"></td>
                             </tr>
                             <tr>
                                 <td class="border-dark" scope="row" style="border-width: 2px;">姓名</td>
-                                <td class="border-dark InnerStudentName" colspan="2" style="border-width: 2px;">Lorem,
-                                    ipsum.</td>
-                                <td class="border-dark" style="border-width: 2px;">論文口試平均成績</td>
+                                <td class="border-dark InnerStudentName" style="border-width: 2px;"></td>
+                                <td class="border-dark" colspan="2" style="border-width: 2px;">論文口試平均成績</td>
                                 <td class="border-dark" style="border-width: 2px;"></td>
                             </tr>
                             <tr>
                                 <td class="border-dark" scope="row" style="border-width: 2px;">論文指導教授</td>
-                                <td class="border-dark InnerStudentTeacher" colspan="2" style="border-width: 2px;">
-                                    Lorem, ipsum.</td>
-                                <td class="border-dark" style="border-width: 2px;">操性成績</td>
+                                <td class="border-dark InnerStudentTeacher" style="border-width: 2px;"></td>
+                                <td class="border-dark" colspan="2" style="border-width: 2px;">操性成績</td>
                                 <td class="border-dark" style="border-width: 2px;"></td>
                             </tr>
                         </tbody>
@@ -589,7 +757,8 @@
                             </tr>
                             <tr>
                                 <td class="border-dark" colspan="3" style="border-width: 2px;">
-                                    本次口試是否專案簽准採視訊方式辦理<input class="ml-3" type="checkbox"> 是 <input class="ml-3" type="checkbox"> 否
+                                    本次口試是否專案簽准採視訊方式辦理<input class="ml-3" type="checkbox"> 是 <input class="ml-3"
+                                        type="checkbox"> 否
                                 </td>
                             </tr>
                         </tbody>
@@ -621,10 +790,25 @@
                             <tr>
                                 <td class="border-dark" style="border-width: 2px;height:50px"></td>
                             </tr>
-
                         </tbody>
                     </table>
                     <h6>以上資料經論文口試委員核對無誤。<h6>
+                </div>
+                <div class="row mt-3">
+                    <table class="table table-bordered">                        
+                        <tbody>
+                            <tr>
+                                <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">#</td>
+                                <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">First</td>
+                                <td class="border-dark" style="border-width: 2px;width:34%;height:200px" scope="col">Last</td>                            
+                              </tr>
+                              <tr>
+                                <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">#</td>
+                                <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">First</td>
+                                <td class="border-dark" style="border-width: 2px;width:34%;height:200px" scope="col">Last</td>                            
+                              </tr>
+                        </tbody>
+                      </table>
                 </div>
             </div>
         </section>
@@ -645,7 +829,8 @@
                     studentDepart = "智慧與綠能產學研究所"
                 }
                 else {
-                    studentDepart = "未選擇系所"
+                    // alert("請選擇系所");
+                    // return 0;
                 }
                 var studentID = $("#studentID").val();
                 var studentName = $("#studentName").val();
@@ -655,7 +840,85 @@
                 var studentTopicEnglish = $("#studentTopicEnglish").val();
                 var studentTeacher = $("#studentTeacher").val();
                 var studentDate = $("#studentDate").val();
+                var studentTime = $("#studentTime").val();
                 var studentPlace = $("#studentPlace").val();
+
+                var Committee1Name = $("#Committee1Name").val();
+                var Committee1Edu = $("#Committee1Edu").val();
+                var Committee1Service = $("#Committee1Service").val();
+                var Committee1Job = $("#Committee1Job").val();
+                var Committee1Skill = $("#Committee1Skill").val();
+
+                var Committee2Name = $("#Committee2Name").val();
+                var Committee2Edu = $("#Committee2Edu").val();
+                var Committee2Service = $("#Committee2Service").val();
+                var Committee2Job = $("#Committee2Job").val();
+                var Committee2Skill = $("#Committee2Skill").val();
+
+                var Committee3Name = $("#Committee3Name").val();
+                var Committee3Edu = $("#Committee3Edu").val();
+                var Committee3Service = $("#Committee3Service").val();
+                var Committee3Job = $("#Committee3Job").val();
+                var Committee3Skill = $("#Committee3Skill").val();
+
+                var Committee4Name = $("#Committee4Name").val();
+                var Committee4Edu = $("#Committee4Edu").val();
+                var Committee4Service = $("#Committee4Service").val();
+                var Committee4Job = $("#Committee4Job").val();
+                var Committee4Skill = $("#Committee4Skill").val();
+
+                // if (studentID.length == 0) {
+                //     alert("請填寫 學號 欄位 ");
+                //     return 0;
+                // }
+                // if (studentName.length == 0) {
+                //     alert("請填寫 姓名 欄位 ");
+                //     return 0;
+                // }
+                // if (studentPhone.length == 0) {
+                //     alert("請填寫 電話 欄位 ");
+                //     return 0;
+                // }
+                // if (studentEmail.length == 0) {
+                //     alert("請填寫 Email 欄位 ");
+                //     return 0;
+                // }
+                // if (studentTopicChinese.length == 0) {
+                //     alert("請填寫 論文(中文) 欄位 ");
+                //     return 0;
+                // }
+                // if (studentTopicEnglish.length == 0) {
+                //     alert("請填寫 論文(英文) 欄位 ");
+                //     return 0;
+                // }
+                // if (studentTeacher.length == 0) {
+                //     alert("請填寫 指導教授 欄位 ");
+                //     return 0;
+                // }
+                // if (studentDate.length == 0) {
+                //     alert("請填寫 考試日期 欄位 ");
+                //     return 0;
+                // }
+                // if (studentTime.length == 0) {
+                //     alert("請填寫 考試時間 欄位 ");
+                //     return 0;
+                // }
+                // if (Committee1Name.length == 0 || Committee1Edu.length == 0 || Committee1Service.length == 0 || Committee1Job ==0 || Committee1Skill == 0) {
+                //     alert("請完整填寫 口試委員(1)  欄位 ");
+                //     return 0;
+                // }
+                // if (Committee2Name.length == 0 || Committee2Edu.length == 0 || Committee2Service.length == 0 || Committee2Job ==0 || Committee2Skill == 0) {
+                //     alert("請完整填寫 口試委員(2)  欄位 ");
+                //     return 0;
+                // }
+                // if (Committee3Name.length == 0 || Committee3Edu.length == 0 || Committee3Service.length == 0 || Committee3Job ==0 || Committee3Skill == 0) {
+                //     alert("請完整填寫 口試委員(3)  欄位 ");
+                //     return 0;
+                // }
+                // if (Committee4Name.length == 0 || Committee4Edu.length == 0 || Committee4Service.length == 0 || Committee4Job ==0 || Committee4Skill == 0) {
+                //     alert("請完整填寫 口試委員(4)  欄位 ");
+                //     return 0;
+                // }
 
                 $(".InnerStudentDepart").text(studentDepart)
                 $(".InnerStudentID").text(studentID)
@@ -667,9 +930,34 @@
                 $(".InnerStudentTopicCE").text(studentTopicChinese + " (" + studentTopicEnglish + " )")
                 $(".InnerStudentTeacher").text(studentTeacher)
                 $(".InnerStudentDate").text(studentDate)
+                $(".InnerStudentTime").text(studentTime)
                 $(".InnerStudentPlace").text(studentPlace)
 
-                // console.log($('#studentName').val());
+                $(".InnerCommittee1Name").text(Committee1Name)
+                $(".InnerCommittee1Edu").text(Committee1Edu)
+                $(".InnerCommittee1Job").text(Committee1Job)
+                $(".InnerCommittee1Service").text(Committee1Service)
+                $(".InnerCommittee1Skill").text(Committee1Skill)
+
+                $(".InnerCommittee2Name").text(Committee2Name)
+                $(".InnerCommittee2Edu").text(Committee2Edu)
+                $(".InnerCommittee2Job").text(Committee2Job)
+                $(".InnerCommittee2Service").text(Committee2Service)
+                $(".InnerCommittee2Skill").text(Committee2Skill)
+
+                $(".InnerCommittee3Name").text(Committee3Name)
+                $(".InnerCommittee3Edu").text(Committee3Edu)
+                $(".InnerCommittee3Job").text(Committee3Job)
+                $(".InnerCommittee3Service").text(Committee3Service)
+                $(".InnerCommittee3Skill").text(Committee3Skill)
+
+                $(".InnerCommittee4Name").text(Committee4Name)
+                $(".InnerCommittee4Edu").text(Committee4Edu)
+                $(".InnerCommittee4Job").text(Committee4Job)
+                $(".InnerCommittee4Service").text(Committee4Service)
+                $(".InnerCommittee4Skill").text(Committee4Skill)
+
+                // console.log($('#studentTime').val());
                 $("#UserInput").addClass("invisible");
                 $("#Present").removeClass("invisible");
                 // $("#Output").removeClass("invisible");
@@ -682,19 +970,14 @@
         })
     </script>
 
-    <!-- <a href="#"
-        onclick="printScreen(Application);printScreen2(Committee);printScreen3(Score);;printScreen4(TitlePage);printScreen5(Check)">列印申請書
-    </a> -->
-
-
 
     <script type="text/javascript">
+        var bootstrapHTML = "<html><head><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'></head><style type='text/css'> body{ font-family:  DFKai-sb;}</style><body>"
         function printScreen(printlist) {
             var value = printlist.innerHTML;
             var printPage = window.open("", "Printing1", "");
             printPage.document.open();
-            // printPage.document.write("<HTML><head></head><BODY onload='window.print();window.close()'>");
-            printPage.document.write("<html><head><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'       integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'></head><body>");
+            printPage.document.write(bootstrapHTML);
             printPage.document.write("<section>");
             printPage.document.write(value);
             printPage.document.write("</section>");
@@ -704,8 +987,7 @@
             var value = printlist.innerHTML;
             var printPage = window.open("", "Pinting2", "");
             printPage.document.open();
-            // printPage.document.write("<HTML><head></head><BODY onload='window.print();window.close()'>");
-            printPage.document.write("<html><head><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'       integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'></head><body>");
+            printPage.document.write(bootstrapHTML);
             printPage.document.write("<section>");
             printPage.document.write(value);
             printPage.document.write("</section>");
@@ -715,8 +997,7 @@
             var value = printlist.innerHTML;
             var printPage = window.open("", "Pinting3", "");
             printPage.document.open();
-            // printPage.document.write("<HTML><head></head><BODY onload='window.print();window.close()'>");
-            printPage.document.write("<html><head><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'       integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'></head><body>");
+            printPage.document.write(bootstrapHTML);
             printPage.document.write("<section>");
             printPage.document.write(value);
             printPage.document.write("</section>");
@@ -726,8 +1007,7 @@
             var value = printlist.innerHTML;
             var printPage = window.open("", "Pinting4", "");
             printPage.document.open();
-            // printPage.document.write("<HTML><head></head><BODY onload='window.print();window.close()'>");
-            printPage.document.write("<html><head><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'       integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'></head><body>");
+            printPage.document.write(bootstrapHTML);
             printPage.document.write("<section>");
             printPage.document.write(value);
             printPage.document.write("</section>");
@@ -737,8 +1017,7 @@
             var value = printlist.innerHTML;
             var printPage = window.open("", "Pinting5", "");
             printPage.document.open();
-            // printPage.document.write("<HTML><head></head><BODY onload='window.print();window.close()'>");
-            printPage.document.write("<html><head><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'       integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'></head><body>");
+            printPage.document.write(bootstrapHTML);
             printPage.document.write("<section>");
             printPage.document.write(value);
             printPage.document.write("</section>");
