@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>交通大學</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style type="text/css">
+        .invisible {
+            display: none;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <section id="UserInput">
+        <div class="container my-3 text-center">
+            <h3 class="mt-3 mb-4 mx-auto">國立交通大學 碩士班學位考試申請書</h3>
+            <div class="row">
+                <div class="col-md-10  mx-auto">
+                    <div class="row">
+                        <div class="col-md-2 mx-auto">
+                            系所
+                        </div>
+                        <div class="col-md-10 mx-auto">
+                            <select id="studentDepart" class="custom-select custom-select-sm">
+                                <option selected>選擇研究所</option>
+                                <option value="1">智慧計算與科技研究所</option>
+                                <option value="2">智慧系統與應用研究所</option>
+                                <option value="3">智慧與綠能產學研究所</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-10 p-3 mx-auto">
+                    <form>
+                        <div class="form-group row">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">學號</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control form-control-sm" id="studentID">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">姓名</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control form-control-sm" id="studentName">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">連絡電話</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control form-control-sm" id="studentPhone">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control form-control-sm" id="studentEmail">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabelSm"
+                                class="col-sm-2 col-form-label col-form-label-sm">論文題目(中文)</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control form-control-sm" id="studentTopicChinese">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabelSm"
+                                class="col-sm-2 col-form-label col-form-label-sm">論文題目(英文)</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control form-control-sm" id="studentTopicEnglish">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">指導教授</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control form-control-sm" id="studentTeacher">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">考試日期時間</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control form-control-sm" id="studentDate"
+                                    placeholder="格式範例: 2020-01-01">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">考試地點</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control form-control-sm" id="studentPlace">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col-md-auto">
+                        <button id="generate" class="btn btn-primary mb-2">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Present" class="invisible my-3">
+        <div class="container">
+            <h2 class="text-center mx-auto my-5">資料表確認</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">系所</th>
+                                <th class="InnerStudentDepart" scope="col">未填寫</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">學號</th>
+                                <td class="InnerStudentID">未填寫</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">姓名</th>
+                                <td class="InnerStudentName">未填寫</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">連絡電話</th>
+                                <td class="InnerStudentPhone">未填寫</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Email</th>
+                                <td class="InnerStudentEmail">未填寫</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">論文題目(中文)</th>
+                                <td class="InnerStudentTopicChinese">未填寫</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">論文題目(英文)</th>
+                                <td class="InnerStudentTopicEnglish">未填寫</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">指導教授</th>
+                                <td class="InnerStudentTeacher">未填寫</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">考試日期時間</th>
+                                <td class="InnerStudentDate">未填寫</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">考試地點</th>
+                                <td class="InnerStudentPlace">未填寫</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="col-md-auto text-center">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>確認無誤後，按下Print產生文件。</br><span class="text-danger">注意:需關閉瀏覽器的自動彈跳視窗封鎖</span></p>
+
+                                <button id="print" class="btn btn-primary mb-2"
+                                    onclick="printScreen(Application);printScreen2(Committee);printScreen3(Score);;printScreen4(TitlePage);printScreen5(Check)">Print</button>
+                            </div>
+                            <div class="col-md-6">
+                                </br>
+                                <p> 更改資料，按下Edit。</p>
+                                <button id="edit" class="btn btn-info mb-2">
+                                    Edit
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Output" class="invisible0">
+        <section id="Application">
+            <div class="container">
+                <div class="row">
+                    <h3 class="mt-3 mb-4 mx-auto">國立交通大學 109學年度第二學期 碩士班學位考試申請書</h3>
+                    <table class=" table table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">系所
+                                </td>
+                                <td class="border-dark InnerStudentDepart" style="border-width: 2px;width: 85%">Lorem
+                                    ipsum dolor sit amet
+                                    consectetur adipisicing</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">學號
+                                </td>
+                                <td class="border-dark InnerStudentID" style="border-width: 2px;width: 85%">Lorem ipsum
+                                    dolor sit amet
+                                    consectetur adipisicing</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">姓名
+                                </td>
+                                <td class="border-dark InnerStudentName" style="border-width: 2px;width: 85%">Lorem
+                                    ipsum dolor sit amet
+                                    consectetur adipisicing</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">
+                                    連絡電話
+                                </td>
+                                <td class="border-dark InnerStudentPhone" style="border-width: 2px;width: 85%">Lorem
+                                    ipsum dolor sit amet
+                                    consectetur adipisicing</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">
+                                    Email
+                                </td>
+                                <td class="border-dark InnerStudentEmail" style="border-width: 2px;width: 85%">Lorem
+                                    ipsum dolor sit amet
+                                    consectetur adipisicing</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">
+                                    論文題目
+                                </td>
+                                <td class="border-dark InnerStudentTopicCE" style="border-width: 2px;width: 85%">Lorem
+                                    ipsum dolor sit amet
+                                    consectetur adipisicing</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">
+                                    指導教授
+                                </td>
+                                <td class="border-dark InnerStudentTeacher" style="border-width: 2px;width: 85%">Lorem
+                                    ipsum dolor sit amet
+                                    consectetur adipisicing</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">
+                                    考試日期時間
+                                </td>
+                                <td class="border-dark InnerStudentDate" style="border-width: 2px;width: 85%">Lorem
+                                    ipsum dolor sit amet
+                                    consectetur adipisicing</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">
+                                    考試地點
+                                </td>
+                                <td class="border-dark InnerStudentPlace" style="border-width: 2px;width: 85%">Lorem
+                                    ipsum dolor sit amet
+                                    consectetur adipisicing</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" colspan="2" style="border-width: 2px;">Lorem ipsum dolor sit
+                                    amet
+                                    consectetur
+                                    adipisicing
+                                    elit.
+                                    Corrupti, vel?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
+                                    sequi!
+                                    Adipisci minima impedit dolorum animi facilis. Perferendis minus molestiae,
+                                    reiciendis
+                                    voluptatem eum voluptas sit saepe quaerat exercitationem error? Adipisci, labore non
+                                    iste, maiores aliquid magnam cum sed eos aut vitae eius molestias doloribus
+                                    cupiditate
+                                    nesciunt corporis perferendis odio pariatur fuga.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="mt-5 mb-3">論文口試委員：</h5>
+                    </div>
+                    <table class=" table table-bordered">
+                        <tbody>
+                            <thead class="text-center">
+                                <tr>
+                                    <th class="border-dark" scope="row" style="border-width: 2px;width: 15%">姓名</th>
+                                    <th class="border-dark" scope="row" style="border-width: 2px;width: 20%">最高學歷</th>
+                                    <th class="border-dark" scope="row" style="border-width: 2px;width: 30%">服務單位</th>
+                                    <th class="border-dark" scope="row" style="border-width: 2px;width: 10%">職稱</th>
+                                    <th class="border-dark" scope="row" style="border-width: 2px;width: 30%">專長</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td class="border-dark" scope="row" style="border-width: 2px">Lorem, ipsum.</td>
+                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit amet.</td>
+                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit.</td>
+                                <td class="border-dark" style="border-width: 2px">Lorem, ipsum dolor.</td>
+                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. A aliquid eveniet soluta iusto
+                                    dolor! Est exercitationem dicta quas culpa corporis?</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" scope="row" style="border-width: 2px">Lorem, ipsum.</td>
+                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit amet.</td>
+                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit.</td>
+                                <td class="border-dark" style="border-width: 2px">Lorem, ipsum dolor.</td>
+                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. A aliquid eveniet soluta iusto
+                                    dolor! Est exercitationem dicta quas culpa corporis?</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" scope="row" style="border-width: 2px">Lorem, ipsum.</td>
+                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit amet.</td>
+                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit.</td>
+                                <td class="border-dark" style="border-width: 2px">Lorem, ipsum dolor.</td>
+                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. A aliquid eveniet soluta iusto
+                                    dolor! Est exercitationem dicta quas culpa corporis?</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" scope="row" style="border-width: 2px">Lorem, ipsum.</td>
+                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit amet.</td>
+                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit.</td>
+                                <td class="border-dark" style="border-width: 2px">Lorem, ipsum dolor.</td>
+                                <td class="border-dark" style="border-width: 2px">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. A aliquid eveniet soluta iusto
+                                    dolor! Est exercitationem dicta quas culpa corporis?</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class=" table table-bordered mt-3">
+                        <tbody>
+                            <thead>
+                                <tr class="text-center">
+                                    <th class="border-dark" scope="row" style="border-width: 2px;width: 33%">系所核准簽章欄
+                                    </th>
+                                    <th class="border-dark" scope="row" style="border-width: 2px;width: 33%">指導教授</th>
+                                    <th class="border-dark" scope="row" style="border-width: 2px;width: 34%">系所 / 班主任
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <th class="border-dark" scope="row" style="border-width: 2px;height:200px"></th>
+                                <th class="border-dark" scope="row" style="border-width: 2px;"></th>
+                                <th class="border-dark" scope="row" style="border-width: 2px;">擬推薦之召集人姓名:</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="Committee">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="mt-3 mx-auto text-center">國立交通大學 <span class="InnerStudentDepart">Lorem</span> 109學年度
+                        </h3>
+                        <h3 class="mt-3 mx-auto text-center">碩士學位考試委員一覽表</h3>
+                    </div>
+                    <table class=" table table-bordered text-center">
+                        <tbody>
+                            <tr>
+                                <td scope="row" colspan="2" class="border-dark" scope="row"
+                                    style="border-width: 2px;width:30%">口試學生姓名學號</td>
+                                <td class="border-dark InnerStudentName" colspan="3"
+                                    style="border-width: 2px;width:70%">Lorem ipsum dolor
+                                    sit amet.</td>
+
+                            </tr>
+                            <tr>
+                                <td class="border-dark" colspan="2" scope="row" style="border-width: 2px">指導教授姓名
+                                <td class="border-dark InnerStudentTeacher" colspan="3" style="border-width: 2px">Lorem
+                                    ipsum dolor sit amet.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" colspan="4" scope="row" style="border-width: 2px;width:85%">
+                                    學位考試委員
+                                </td>
+                                <td class="border-dark" rowspan="2" style="border-width: 2px;width:15%">擬推薦之召集人姓名</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" scope="row" style="border-width: 2px;width:15%">姓名</td>
+                                <td class="border-dark" style="border-width: 2px;width:15%">職稱</td>
+                                <td class="border-dark" style="border-width: 2px;width:20%">最高學歷</td>
+                                <td class="border-dark" style="border-width: 2px;width:35%">備註</td>
+
+                            </tr>
+                            <tr>
+                                <td class="border-dark" scope="row" style="border-width: 2px;width:15%">Lorem, ipsum.
+                                </td>
+                                <td class="border-dark" style="border-width: 2px;width:15%">Lorem, ipsum.</td>
+                                <td class="border-dark" style="border-width: 2px;width:20%">Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing.</td>
+                                <td class="border-dark" style="border-width: 2px;width:35%">Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Autem, eum.</td>
+                                <td class="border-dark" style="border-width: 2px;width:15%">Lorem ipsum </td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" scope="row" style="border-width: 2px;width:15%">Lorem, ipsum.
+                                </td>
+                                <td class="border-dark" style="border-width: 2px;width:15%">Lorem, ipsum.</td>
+                                <td class="border-dark" style="border-width: 2px;width:20%">Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing.</td>
+                                <td class="border-dark" style="border-width: 2px;width:35%">Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Autem, eum.</td>
+                                <td class="border-dark" style="border-width: 2px;width:15%">Lorem ipsum </td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" scope="row" style="border-width: 2px;width:15%">Lorem, ipsum.
+                                </td>
+                                <td class="border-dark" style="border-width: 2px;width:15%">Lorem, ipsum.</td>
+                                <td class="border-dark" style="border-width: 2px;width:20%">Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing.</td>
+                                <td class="border-dark" style="border-width: 2px;width:35%">Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Autem, eum.</td>
+                                <td class="border-dark" style="border-width: 2px;width:15%">Lorem ipsum </td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" scope="row" style="border-width: 2px;width:15%">Lorem, ipsum.
+                                </td>
+                                <td class="border-dark" style="border-width: 2px;width:15%">Lorem, ipsum.</td>
+                                <td class="border-dark" style="border-width: 2px;width:20%">Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing.</td>
+                                <td class="border-dark" style="border-width: 2px;width:35%">Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Autem, eum.</td>
+                                <td class="border-dark" style="border-width: 2px;width:15%">Lorem ipsum </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse dolore
+                        sapiente
+                        blanditiis a, nobis doloribus deleniti. Quos ducimus totam rem ipsam dignissimos nam dolore eius
+                        quae in. Explicabo est omnis odit iste aliquid assumenda molestias facere, repudiandae alias
+                        tenetur! Voluptas illo nulla unde, error velit necessitatibus praesentium porro pariatur ipsa,
+                        quibusdam iusto!</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Score">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="mt-3 mx-auto text-center">國立交通大學 <span class="InnerStudentDepart">Lorem</span>></h3>
+                        <h3 class="mt-3 mx-auto text-center">碩士班畢業論文口試評分表</h3>
+                    </div>
+                    <div class="col-md-6 mt-3">研究生姓名: <span class="InnerStudentName">Lorem</span> </div>
+                    <div class="col-md-6 mt-3">學號: <span class="InnerStudentID">Lorem</span></div>
+
+                    <div class="col-md-2 mt-3">論文題目:</div>
+                    <div class="col-10 mt-3">
+                        <div class="col-md-12">(中文) <span class="InnerStudentTopicChinese">Lorem ipsum dolor sit
+                                amet.</span></div>
+                        <div class="col-md-12 mt-3">(英文) <span class="InnerStudentTopicEnglish">Lorem ipsum dolor sit
+                                amet.</span></div>
+                    </div>
+
+                    <table class=" table table-bordered text-center">
+                        <tbody>
+                            <tr>
+                                <td scope="row" class="border-dark" scope="row" style="border-width: 2px;width:15%;">成績
+                                </td>
+                                <td class="border-dark" style="border-width: 2px;width:85%"></td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="border-dark" scope="row"
+                                    style="border-width: 2px;width:15%;height:750px">評語</td>
+                                <td class="border-dark" style="border-width: 2px;width:85%"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row text-center mt-5">
+                    <div class="col-md-8 mx-auto"><span class="mr-5">中華民國</span> <span class="mr-5">年</span> <span
+                            class="mr-5">月</span> 日</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="TitlePage">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="mt-3 mx-auto text-center">國立交通大學</h2>
+                        <h2 class="mt-3 mx-auto text-center">論文口試委員會審定書</h2>
+                    </div>
+                    <div class="col-md-12 text-center mx-auto mt-5">
+                        本校 <span class="InnerStudentDepart">Lorem ipsum dolor sit amet</span> 碩士班 <u
+                            class="InnerStudentName"></u> 君<br />
+                    </div>
+                    <div class="col-md-12 text-center mx-auto mt-3">
+                        所提論文 <u class="InnerStudentTopicChinese">Lorem ipsum dolor sit amet</u>
+                    </div>
+                    <div class="col-md-12 text-center mx-auto mt-3">
+                        合於碩士資格標準，業經本委員會評審認可
+                    </div>
+
+                    <div class="col-md-2 mt-5">口試委員: </div>
+                    <div class="col-md-10 mt-5">
+                        <div class="row">
+                            <div class="col-md-6 mt-5">__________________________________________</div>
+                            <div class="col-md-6 mt-5">__________________________________________</div>
+                            <div class="col-md-6 mt-5">__________________________________________</div>
+                            <div class="col-md-6 mt-5">__________________________________________</div>
+                            <div class="col-md-6 my-5">__________________________________________</div>
+                            <div class="col-md-6 my-5">__________________________________________</div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-5">指導教授: </div>
+                    <div class="col-md-9 my-5">
+                        _____________________________________________________________________________________________
+                    </div>
+                    <div class="col-md-3 my-5">所長: </div>
+                    <div class="col-md-9 my-5">
+                        _____________________________________________________________________________________________
+                    </div>
+                </div>
+
+            </div>
+            <div class="row text-center mt-5">
+                <div class="col-md-8 mx-auto"><span class="mr-5">中華民國</span> <span class="mr-5">年</span> <span
+                        class="mr-5">月</span> 日</div>
+            </div>
+            </div>
+        </section>
+
+        <section id="Check">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="mt-3 mx-auto text-center">國立交通大學學生學位考試成績資料表</h3>
+                    </div>
+                    <table class=" table table-bordered text-center">
+                        <tbody>
+                            <tr>
+                                <td class="border-dark" scope="row" style="border-width: 2px;width:15%">學年度學期</td>
+                                <td class="border-dark" style="border-width: 2px;width:10%">1092</td>
+                                <td class="border-dark" style="border-width: 2px;width:10%">系所</td>
+                                <td class="border-dark InnerStudentDepart" style="border-width: 2px;width:45%">Lorem
+                                    ipsum dolor sit amet
+                                    consectetur.</td>
+                                <td class="border-dark" style="border-width: 2px;width:20%">碩士</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" scope="row" style="border-width: 2px;">學號</td>
+                                <td class="border-dark InnerStudentID" colspan="2" style="border-width: 2px;">Lorem,
+                                    ipsum.</td>
+                                <td class="border-dark" style="border-width: 2px;">論文口試日期</td>
+                                <td class="border-dark InnerStudentDate" style="border-width: 2px;">xxxx-xx-xx</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" scope="row" style="border-width: 2px;">姓名</td>
+                                <td class="border-dark InnerStudentName" colspan="2" style="border-width: 2px;">Lorem,
+                                    ipsum.</td>
+                                <td class="border-dark" style="border-width: 2px;">論文口試平均成績</td>
+                                <td class="border-dark" style="border-width: 2px;"></td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" scope="row" style="border-width: 2px;">論文指導教授</td>
+                                <td class="border-dark InnerStudentTeacher" colspan="2" style="border-width: 2px;">
+                                    Lorem, ipsum.</td>
+                                <td class="border-dark" style="border-width: 2px;">操性成績</td>
+                                <td class="border-dark" style="border-width: 2px;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class=" table table-bordered text-center mt-3">
+                        <tbody>
+                            <tr>
+                                <td class="border-dark" rowspan="2" scope="row" style="border-width: 2px;width:15%">論文名稱
+                                </td>
+                                <td class="border-dark" style="border-width: 2px;width:10%">中文</td>
+                                <td class="border-dark InnerStudentTopicChinese" style="border-width: 2px;width:75%">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, alias.</td>
+
+                            </tr>
+                            <tr>
+                                <td class="border-dark" style="border-width: 2px;">英文</td>
+                                <td class="border-dark InnerStudentTopicEnglish" style="border-width: 2px;">Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Nostrum, alias.</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" colspan="3" style="border-width: 2px;">
+                                    本次口試是否專案簽准採視訊方式辦理<input class="ml-3" type="checkbox"> 是 <input class="ml-3" type="checkbox"> 否
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class=" table table-bordered text-center mt-3">
+                        <tbody>
+                            <tr>
+                                <td class="border-dark" style="border-width: 2px;width:60%">
+                                    已確認學生完成碩士論文原創性比對，並供學位考試委員參考(指導教授請簽名)</td>
+                                <td class="border-dark" style="border-width: 2px;width:40%"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <table class=" table table-bordered text-center mt-3">
+                        <tbody>
+                            <tr>
+                                <td class="border-dark" rowspan="4" style="border-width: 2px;width:20%">論文口試委員</td>
+                                <td class="border-dark" style="border-width: 2px;width:80%;height:50px"></td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" style="border-width: 2px;height:50px"></td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" style="border-width: 2px;height:50px"></td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" style="border-width: 2px;height:50px"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <h6>以上資料經論文口試委員核對無誤。<h6>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#generate').click(function () {
+                var studentDepart = $("#studentDepart").val();
+                if (studentDepart == 1) {
+                    studentDepart = "智慧計算與科技研究所"
+                }
+                else if (studentDepart == 2) {
+                    studentDepart = "智慧系統與應用研究所"
+                }
+                else if (studentDepart == 3) {
+                    studentDepart = "智慧與綠能產學研究所"
+                }
+                else {
+                    studentDepart = "未選擇系所"
+                }
+                var studentID = $("#studentID").val();
+                var studentName = $("#studentName").val();
+                var studentPhone = $("#studentPhone").val();
+                var studentEmail = $("#studentEmail").val();
+                var studentTopicChinese = $("#studentTopicChinese").val();
+                var studentTopicEnglish = $("#studentTopicEnglish").val();
+                var studentTeacher = $("#studentTeacher").val();
+                var studentDate = $("#studentDate").val();
+                var studentPlace = $("#studentPlace").val();
+
+                $(".InnerStudentDepart").text(studentDepart)
+                $(".InnerStudentID").text(studentID)
+                $(".InnerStudentName").text(studentName)
+                $(".InnerStudentPhone").text(studentPhone)
+                $(".InnerStudentEmail").text(studentEmail)
+                $(".InnerStudentTopicChinese").text(studentTopicChinese)
+                $(".InnerStudentTopicEnglish").text(studentTopicEnglish)
+                $(".InnerStudentTopicCE").text(studentTopicChinese + " (" + studentTopicEnglish + " )")
+                $(".InnerStudentTeacher").text(studentTeacher)
+                $(".InnerStudentDate").text(studentDate)
+                $(".InnerStudentPlace").text(studentPlace)
+
+                // console.log($('#studentName').val());
+                $("#UserInput").addClass("invisible");
+                $("#Present").removeClass("invisible");
+                // $("#Output").removeClass("invisible");
+
+            })
+            $("#edit").click(function () {
+                $("#UserInput").removeClass("invisible");
+                $("#Present").addClass("invisible");
+            })
+        })
+    </script>
+
+    <!-- <a href="#"
+        onclick="printScreen(Application);printScreen2(Committee);printScreen3(Score);;printScreen4(TitlePage);printScreen5(Check)">列印申請書
+    </a> -->
+
+
+
+    <script type="text/javascript">
+        function printScreen(printlist) {
+            var value = printlist.innerHTML;
+            var printPage = window.open("", "Printing1", "");
+            printPage.document.open();
+            // printPage.document.write("<HTML><head></head><BODY onload='window.print();window.close()'>");
+            printPage.document.write("<html><head><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'       integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'></head><body>");
+            printPage.document.write("<section>");
+            printPage.document.write(value);
+            printPage.document.write("</section>");
+            printPage.document.close("</body></html>");
+        }
+        function printScreen2(printlist) {
+            var value = printlist.innerHTML;
+            var printPage = window.open("", "Pinting2", "");
+            printPage.document.open();
+            // printPage.document.write("<HTML><head></head><BODY onload='window.print();window.close()'>");
+            printPage.document.write("<html><head><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'       integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'></head><body>");
+            printPage.document.write("<section>");
+            printPage.document.write(value);
+            printPage.document.write("</section>");
+            printPage.document.close("</body></html>");
+        }
+        function printScreen3(printlist) {
+            var value = printlist.innerHTML;
+            var printPage = window.open("", "Pinting3", "");
+            printPage.document.open();
+            // printPage.document.write("<HTML><head></head><BODY onload='window.print();window.close()'>");
+            printPage.document.write("<html><head><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'       integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'></head><body>");
+            printPage.document.write("<section>");
+            printPage.document.write(value);
+            printPage.document.write("</section>");
+            printPage.document.close("</body></html>");
+        }
+        function printScreen4(printlist) {
+            var value = printlist.innerHTML;
+            var printPage = window.open("", "Pinting4", "");
+            printPage.document.open();
+            // printPage.document.write("<HTML><head></head><BODY onload='window.print();window.close()'>");
+            printPage.document.write("<html><head><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'       integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'></head><body>");
+            printPage.document.write("<section>");
+            printPage.document.write(value);
+            printPage.document.write("</section>");
+            printPage.document.close("</body></html>");
+        }
+        function printScreen5(printlist) {
+            var value = printlist.innerHTML;
+            var printPage = window.open("", "Pinting5", "");
+            printPage.document.open();
+            // printPage.document.write("<HTML><head></head><BODY onload='window.print();window.close()'>");
+            printPage.document.write("<html><head><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'       integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'></head><body>");
+            printPage.document.write("<section>");
+            printPage.document.write(value);
+            printPage.document.write("</section>");
+            printPage.document.close("</body></html>");
+        }
+
+    </script>
+</body>
+
+</html>
