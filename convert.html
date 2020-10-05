@@ -208,7 +208,7 @@
         </div>
     </section>
 
-    <section id="Present" class="invisible my-3">
+    <section id="Present" class="invisible0 my-3">
         <div class="container">
             <h2 class="text-center mx-auto my-5">資料表確認</h2>
             <div class="row">
@@ -335,19 +335,33 @@
             </div>
             <div class="col-md-auto text-center">
                 <div class="row">
-                    <div class="col-md-6">
-                        <p>確認無誤後，按下Print產生文件。</br><span class="text-danger">注意: 需關閉瀏覽器的自動彈跳視窗封鎖</span></p>
-
-                        <button id="print" class="btn btn-primary mb-2"
-                            onclick="printScreen(Application);printScreen2(Committee);printScreen3(Score);;printScreen4(TitlePage);printScreen5(Check)">Print</button>
-                    </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
+                        <h3>Step1:</h3>
+                    </br>
+                        <p>  若更改資料，按下Edit。</p>
                         </br>
-                        <p> 更改資料，按下Edit。</p>
                         <button id="edit" class="btn btn-info mb-2">
                             Edit
                         </button>
                     </div>
+                    <div class="col-4">
+                        <h3>Step2:</h3>
+                    </br>
+                        <p> 確認資料無誤後，按下Submit</br>
+                            <span class="text-danger">注意: 送出後資料將送至院辦進行統整</span>
+                        </p>
+                    
+                        <button id="submit2MySQL" class="btn btn-primary mb-2">Submit</button>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Step3:</h3>
+                        <p>按下 Print 產生文件。</br>
+                            <span class="text-danger">注意: 需關閉瀏覽器的自動彈跳視窗封鎖 (應有5頁視窗)</span></p>
+
+                        <button id="print" class="btn btn-primary mb-2"
+                            onclick="printScreen(Application);printScreen2(Committee);printScreen3(Score);;printScreen4(TitlePage);printScreen5(Check)">Print</button>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -795,20 +809,26 @@
                     <h6>以上資料經論文口試委員核對無誤。<h6>
                 </div>
                 <div class="row mt-3">
-                    <table class="table table-bordered">                        
+                    <table class="table table-bordered">
                         <tbody>
                             <tr>
-                                <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">#</td>
-                                <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">First</td>
-                                <td class="border-dark" style="border-width: 2px;width:34%;height:200px" scope="col">Last</td>                            
-                              </tr>
-                              <tr>
-                                <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">#</td>
-                                <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">First</td>
-                                <td class="border-dark" style="border-width: 2px;width:34%;height:200px" scope="col">Last</td>                            
-                              </tr>
+                                <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">#
+                                </td>
+                                <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">
+                                    First</td>
+                                <td class="border-dark" style="border-width: 2px;width:34%;height:200px" scope="col">
+                                    Last</td>
+                            </tr>
+                            <tr>
+                                <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">#
+                                </td>
+                                <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">
+                                    First</td>
+                                <td class="border-dark" style="border-width: 2px;width:34%;height:200px" scope="col">
+                                    Last</td>
+                            </tr>
                         </tbody>
-                      </table>
+                    </table>
                 </div>
             </div>
         </section>
@@ -903,19 +923,19 @@
                     alert("請填寫 考試時間 欄位 ");
                     return 0;
                 }
-                if (Committee1Name.length == 0 || Committee1Edu.length == 0 || Committee1Service.length == 0 || Committee1Job ==0 || Committee1Skill == 0) {
+                if (Committee1Name.length == 0 || Committee1Edu.length == 0 || Committee1Service.length == 0 || Committee1Job == 0 || Committee1Skill == 0) {
                     alert("請完整填寫 口試委員(1)  欄位 ");
                     return 0;
                 }
-                if (Committee2Name.length == 0 || Committee2Edu.length == 0 || Committee2Service.length == 0 || Committee2Job ==0 || Committee2Skill == 0) {
+                if (Committee2Name.length == 0 || Committee2Edu.length == 0 || Committee2Service.length == 0 || Committee2Job == 0 || Committee2Skill == 0) {
                     alert("請完整填寫 口試委員(2)  欄位 ");
                     return 0;
                 }
-                if (Committee3Name.length == 0 || Committee3Edu.length == 0 || Committee3Service.length == 0 || Committee3Job ==0 || Committee3Skill == 0) {
+                if (Committee3Name.length == 0 || Committee3Edu.length == 0 || Committee3Service.length == 0 || Committee3Job == 0 || Committee3Skill == 0) {
                     alert("請完整填寫 口試委員(3)  欄位 ");
                     return 0;
                 }
-                if (Committee4Name.length == 0 || Committee4Edu.length == 0 || Committee4Service.length == 0 || Committee4Job ==0 || Committee4Skill == 0) {
+                if (Committee4Name.length == 0 || Committee4Edu.length == 0 || Committee4Service.length == 0 || Committee4Job == 0 || Committee4Skill == 0) {
                     alert("請完整填寫 口試委員(4)  欄位 ");
                     return 0;
                 }
