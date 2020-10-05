@@ -13,16 +13,44 @@
         .invisible {
             display: none;
         }
+
+        /* Bottom */
+        .bottomBox {
+            text-align: center;
+            background-color: #363636;
+            padding: 20px 0px 10px 0px;
+        }
+
+        .bottomBox span {
+            font-family: sans-serif;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        .bottomtitle {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+        }
+
+        .bottomInfo {
+            color: black;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 
 <body>
-
     <section id="UserInput">
         <div class="container my-3 text-center">
-            <h3 class="mt-3 mb-4 mx-auto">國立交通大學 碩士班學位考試申請書</h3>
-            <div class="row">
+            <div class="row my-3">
+                <div class="col-md-3">
+                    <img src="NCTU.png" class="img-fluid float-right mt-1" width="60x">
+                </div>
+                <div class="col-md-9">
+                    <h3 class="mt-3 mb-4 text-left">國立交通大學 碩士班學位考試申請書</h3>
+                </div>
                 <div class="col-md-10  mx-auto">
                     <div class="row">
                         <div class="col-md-2 mx-auto">
@@ -206,12 +234,18 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <section id="Present" class="invisible my-3">
-        <div class="container">
-            <h2 class="text-center mx-auto my-5">資料表確認</h2>
+        <div class="container">   
             <div class="row">
+                <div class="col-5">
+                    <img src="NCTU.png" class="img-fluid float-right mt-4" width="70x">
+                </div>
+                <div class="col-7">
+                    <h2 class="text-left my-5">資料表確認</h2>
+                </div>
                 <div class="col-md-12 mx-auto">
                     <table class="table table-striped">
                         <thead>
@@ -337,8 +371,8 @@
                 <div class="row">
                     <div class="col-md-4">
                         <h3>Step1:</h3>
-                    </br>
-                        <p>  若更改資料，按下Edit。</p>
+                        </br>
+                        <p> 若更改資料，按下Edit。</p>
                         </br>
                         <button id="edit" class="btn btn-info mb-2">
                             Edit
@@ -346,12 +380,12 @@
                     </div>
                     <div class="col-4">
                         <h3>Step2:</h3>
-                    </br>
+                        </br>
                         <p> 確認資料無誤後，按下Submit</br>
                             <span class="text-danger">注意: 送出後資料將送至院辦進行統整</span>
                         </p>
-                    
-                        <button id="submit2MySQL" class="btn btn-primary mb-2">Submit</button>
+
+                        <button id="submit2MySQL" class="btn btn-success mb-2">Submit</button>
                     </div>
                     <div class="col-md-4">
                         <h3>Step3:</h3>
@@ -367,12 +401,68 @@
         </div>
     </section>
 
+    <footer id="contact" class="bottomBox content pt-5 pb-3">
+        <ul class="nav justify-content-center mb-5">
+            <li class="nav-item">
+                <svg class="bi bi-person-fill text-secondary" width="1em" height="1em" viewBox="0 0 16 16"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg>
+                <span class="bottomInfo text-white mr-md-3">Maggy Jen</span>
+            </li>
+            <li class="nav-item">
+            </li>
+            <li class="nav-item">
+                <svg class="bi bi-envelope text-secondary" width="1em" height="1em" viewBox="0 0 16 16"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M14 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z" />
+                    <path
+                        d="M.05 3.555C.017 3.698 0 3.847 0 4v.697l5.803 3.546L0 11.801V12c0 .306.069.596.192.856l6.57-4.027L8 9.586l1.239-.757 6.57 4.027c.122-.26.191-.55.191-.856v-.2l-5.803-3.557L16 4.697V4c0-.153-.017-.302-.05-.445L8 8.414.05 3.555z" />
+                </svg>
+                <span class="bottomInfo text-white mr-md-3">yljen@nctu.edu.tw</span>
+            </li>
+            <li class="nav-item">
+                <svg class="bi bi-geo-alt text-secondary" width="1em" height="1em" viewBox="0 0 16 16"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg>
+                <span class="bottomInfo text-white mr-md-3">NCTU</span>
+            </li>
+            <li class="nav-item">
+                <svg class="bi bi-phone text-secondary" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                    <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                </svg>
+                <span class="bottomInfo text-white mr-md-3">(06)303-2121 #57761</span>
+            </li>
+        </ul>
+        <div class="container mb-5">
+        </div>
+        <!-- <p class="float-right back2top"><a href="#">Back to top</a></p> -->
+        <p class="text-secondary text-center mb-0">
+            &copy; 2020 Company, Inc. &middot;
+            <a href="https://www.facebook.com/jim93073?ref=bookmarks" class="text-info">NCTU</a>
+        </p>
+    </footer>
+
+
     <section id="Output" class="invisible">
         <section id="Application">
             <div class="container">
                 <div class="row">
-                    <h3 class="mt-3 mb-4 mx-auto">國立交通大學 109學年度第二學期 碩士班學位考試申請書</h3>
-                    <table class=" table table-bordered">
+                    <div class="col-md-2">
+                        <img src="NCTU.png" class="img-fluid float-right mt-1" width="60x">
+                    </div>
+                    <div class="col-md-10">
+                        <h3 class="mt-3 mb-4 text-left">國立交通大學 109學年度第二學期 碩士班學位考試申請書</h3>
+                    </div>
+                    <!-- <h3 class="mt-3 mb-4 mx-auto">國立交通大學 109學年度第二學期 碩士班學位考試申請書</h3> -->
+                    <table class=" table table-bordered mt-3">
                         <tbody>
                             <tr>
                                 <td class="border-dark text-center" scope="row" style="border-width: 2px;width: 15%">系所
@@ -540,7 +630,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="mt-3 mx-auto text-center">國立交通大學 <span class="InnerStudentDepart">Lorem</span> 109學年度
+                        <h3 class="mt-3 mx-auto text-center">國立交通大學 <span class="InnerStudentDepart"></span> 109學年度
                         </h3>
                         <h3 class="mt-3 mx-auto text-center">碩士學位考試委員一覽表</h3>
                     </div>
@@ -812,23 +902,38 @@
                     <table class="table table-bordered">
                         <tbody>
                             <tr>
-                                <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">#
+                                <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">
+                                    學位考試委員 (召集人) </br>
+                                    (請召集人勾選後簽名) </br>
+                                    <span class="font-weight-bold">
+                                        論文是否符合系所專業研究領域: </br>
+                                        <input class="ml-3" type="checkbox"> 是 <input class="ml-3"
+                                        type="checkbox"> 否
+                                    </span>
                                 </td>
                                 <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">
-                                    First</td>
+                                    系所主管 
+                                </td>
                                 <td class="border-dark" style="border-width: 2px;width:34%;height:200px" scope="col">
-                                    Last</td>
+                                    系所助理</td>
                             </tr>
                             <tr>
-                                <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">#
+                                <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">
+                                    生輔組 (期末考開始後免會)
                                 </td>
                                 <td class="border-dark" style="border-width: 2px;width:33%;height:200px" scope="col">
-                                    First</td>
+                                    課輔組 (期末考開始後免會)  </br>
+                                    本學期: </br>
+                                    <input class="ml-3" type="checkbox"> 有修課 </br>
+                                    <input class="ml-3" type="checkbox"> 沒有修課
+                                </td>
                                 <td class="border-dark" style="border-width: 2px;width:34%;height:200px" scope="col">
-                                    Last</td>
+                                    註冊組收件    
+                                </td>
                             </tr>
                         </tbody>
                     </table>
+                    備註 : 通過學位口試後，本成績資料表必須先會簽生輔組及課務組後，再連同論文審定書影本一併送交註冊組，以利印製學位證書。
                 </div>
             </div>
         </section>
