@@ -286,3 +286,19 @@ svg {
     color: black;
     font-weight: bold;
 }
+/* Award section */
+#Award {
+    background-image: linear-gradient(105deg,#3b7fba 50%, #2567a1 50%);	
+}
+#Award p {
+	font-weight:700;
+	letter-spacing:1px;
+}
+#Award h2 {
+	border-bottom:1px solid #fff;
+	line-height:2;
+	margin-bottom:1rem;
+}
+#Award .award_title{
+	color:#52d2ff;
+}
